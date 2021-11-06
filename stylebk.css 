@@ -1,0 +1,102 @@
+body
+ {
+ background-color: lightsalmon;
+}
+a {
+      text-decoration:none;
+}
+h1  
+{
+  color: rgb(151, 135, 135);
+  font-weight:100;
+}
+li 
+{
+  background-color: rgb(135, 151, 146);
+  padding: 10px
+}
+nav
+{
+      background-color: lightgrey;
+      width: 130px;
+      padding: 10px;
+      margin: 10px;
+}
+li:hover
+{
+  background-color: rgb(212, 62, 62);
+  color:antiquewhite
+}
+table
+{
+  border-collapse: collapse;
+  font-family: serif;
+  font-size: 1.5em;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+  color:rgb(28, 201, 143)
+}
+#tabletags th {
+  background-color: black;
+  color: white;
+}
+#tabletags tr:nth-child(even) {
+  background-color: rgb(153, 204, 255);
+}
+#tabletags tr:nth-child(odd) {
+ background-color: rgb(224, 224, 224);
+}
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+  'header1 header1 header1'
+  'col1 col2 col3' 
+  'footer1 footer1 footer1';
+  grid-gap: 10px;
+}
+.item1 {
+  grid-area: header1;
+  text-align: center;
+  font-weight:100;
+}
+.item2 {
+  grid-area: col1;
+} 
+.item3 {
+  grid-area: col2;
+}
+.item4 {
+  grid-area: col3;
+}
+.item5 {
+  grid-area: footer1;
+}
+@media screen and (max-width: 600px){
+body {
+	background-color: #ad9f61;
+}
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'header1'
+  'header2'
+	'col1'
+	'col2'
+  'col3'
+	'footer1';
+	grid-gap: 10px;
+}
